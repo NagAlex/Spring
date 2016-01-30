@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:p="http://www.springframework.org/schema/p"
+	   xmlns:util="http://www.springframework.org/schema/util"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	     http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	     http://www.springframework.org/schema/util
+	     http://www.springframework.org/schema/util/spring-util-3.1.xsd
+	     http://www.springframework.org/schema/context
+	     http://www.springframework.org/schema/context/spring-context-3.1.xsd
+	     http://www.springframework.org/schema/aop
+	     http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+
+	<context:component-scan base-package="org.nag.translator" />	     
+<!-- 	
+	<bean id="inetSocketAddress" class="java.net.InetSocketAddress" >
+		<constructor-arg value="ws-062" />
+		<constructor-arg value="8080" />
+	</bean>
+
+	<bean id="proxy" class="java.net.Proxy">
+		<constructor-arg index="1" value="java.net.Proxy.Type.HTTP"/>
+		<constructor-arg index="2" ref="inetSocketAddress" />
+	</bean>
+ -->	
+<!-- 	
+	<bean id="fileSourceProvider" class="org.nag.translator.source.FileSourceProvider" />
+	<bean id="urlSourceProvider" class="org.nag.translator.source.URLSourceProvider" />
+ -->	
+<!-- 	
+	<bean id="sourceLoader" class="org.nag.translator.source.SourceLoader">
+		<property name="sourceProviders">
+			<list>
+				<ref bean="fileSourceProvider"/>
+				<ref bean="urlSourceProvider"/>
+			</list>
+		</property>
+	</bean>
+ -->
+<!--  	
+	<bean id="translator" class="org.nag.translator.Translator">
+		<property name="urlSourceProvider" ref="urlSourceProvider" />
+	</bean>
+ -->	
+</beans>	     
+	
